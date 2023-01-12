@@ -35,12 +35,12 @@ class MessageView extends StatelessWidget {
                     return Container();
                   }
                 }),
-            FlatButton(
+            OutlinedButton(
                 onPressed: () {
                   messageController.sendMessage();
                 },
                 child: Text("Send")),
-            FlatButton(
+            OutlinedButton(
                 onPressed: () async {
                   final file = OpenFilePicker()
                     ..filterSpecification = {

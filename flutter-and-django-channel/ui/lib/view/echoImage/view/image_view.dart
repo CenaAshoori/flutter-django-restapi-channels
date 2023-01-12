@@ -43,7 +43,7 @@ class ImageView extends StatelessWidget {
                         return Container();
                       }
                     }),
-                FlatButton(
+                OutlinedButton(
                     onPressed: () async {
                       final file = OpenFilePicker()
                         ..filterSpecification = {

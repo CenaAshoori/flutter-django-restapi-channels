@@ -37,8 +37,10 @@ class MyHome extends StatelessWidget {
     ];
     return Container(
       padding: const EdgeInsets.all(8),
-      child: FlatButton(
-          color: getRandomElement(colors),
+      child: OutlinedButton(
+          // style:
+          // ButtonStyle(backgroundColor :
+          // getRandomElement(colors)),
           child: Text(title),
           onPressed: () {
             Get.to(widget);
